@@ -1,0 +1,131 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{colortbl}
+\usepackage{xcolor}
+
+\title{Report}
+\author{Hugo Mojica Angarita - Juliana Camila Rojas}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+In this project, we developed a chatbot for food recipes using publicly available datasets and natural language processing (NLP) techniques. The main idea behind the project was to create a useful tool for users interested in cooking, providing an interactive way to access recipes and related ingredient information.
+
+\section{Topic Selection}
+
+The chosen topic for the project was food. This selection was based on the general interest in food and cooking, as well as the availability of a large amount of data and resources related to recipes and food. Additionally, the practical applications of a recipe chatbot are evident, as it could be used as a personal culinary assistant.
+
+\section{Research and Data Collection}
+
+Extensive research was conducted to find suitable datasets containing detailed information on food recipes. Two datasets available on Kaggle were selected:
+
+\begin{enumerate}
+    \item \textbf{Nutrition details for most common foods}: This dataset provides detailed nutritional information on a wide variety of common foods. It was used to enrich the recipes with nutritional information.
+    \item \textbf{Food ingredients and recipe dataset with images}: This dataset contains food recipes along with images of the dishes. It was used as the main source of recipes for the chatbot.
+\end{enumerate}
+
+In addition to the datasets, PDF documents containing food recipes were explored. These documents were used to test the chatbot's ability to process and analyze different types of data.
+
+\section{Chatbot Development}
+
+A base code provided by the instructor was used as a starting point for the development of the chatbot. However, several significant modifications and improvements were made to adapt the chatbot to the specific needs of the project.
+
+\subsection{System Analysis}
+
+\begin{itemize}
+    \item \textbf{System Components: }\\
+\textbf{Ingredients:} Categories of food like vegetables, meats, spices, etc.\\
+\textbf{Recipes:} Sets of instructions combining ingredients to create dishes.\\
+\textbf{Cooking Techniques:} Methods such as baking, roasting, sautéing used in food preparation.\\
+\textbf{Tools and Equipment:} Necessary kitchen utensils and appliances.\\
+\textbf{User Preferences:} Dietary restrictions, personal tastes, and skill levels.\\
+\textbf{Nutritional Information:} Data on calories, macronutrients, etc.\\
+    
+    \item \textbf{Interactions and Interdependencies: }\\
+\textbf{Ingredients and Recipes:} Availability of ingredients affects recipe selection.\\
+\textbf{Recipes and Cooking Techniques:} Recipes require specific techniques and tools.\\
+\textbf{User Preferences and Recipes:} User preferences influence recipe selection.\\
+\textbf{Nutritional Information and User Preferences:} Nutritional information guides recipe choice according to dietary needs.\\
+    
+    \item \textbf{System Complexity and Dynamics:}\\
+Cooking is a complex and dynamic system. Changes in available ingredients or preferences can affect the entire process of meal planning and preparation. Additionally, timing and sequence coordination are crucial for optimal results.
+\end{itemize}
+
+\subsection{Graphical User Interface (GUI)}
+
+\begin{itemize}
+    \item The graphical user interface was improved to be more intuitive and user-friendly.
+    \item A functionality was added to load and display recipe images alongside text.
+    \item A more attractive and modern design was implemented to enhance the user experience.
+\end{itemize}
+
+\subsection{Text Processing}
+
+\begin{itemize}
+    \item Text processing functions were enhanced to handle a wider variety of recipe formats and structures.
+    \item Support was added for extracting nutritional information from recipes using the nutrition dataset.
+\end{itemize}
+
+\subsection{Additional Features}
+
+\begin{itemize}
+    \item A search function was implemented, allowing users to find specific recipes by name or ingredients.
+    \item The capability to save and load favorite recipes was added for easy access in future sessions.
+\end{itemize}
+
+\section{Chatbot Results}
+
+\begin{table}[ht]
+    \centering
+    \caption{Sample Interactions with the Chatbot}
+    \label{tab:low_calorie_recipe}
+    \begin{tabular}{|c|}
+        \hline
+        \rowcolor{lightgray} 
+        You: Tell me the least calorie recipe \\
+        \hline
+        Assistant: The least caloric recipe here is the Shredded Wheat Biscuit. \\
+        With a total of 102 calories for one serving, it's the best option if you are\\
+        looking to minimize your caloric intake while still enjoying a tasty and \\
+        satisfying meal or snack. \\
+        \hline
+        \rowcolor{lightgray} 
+        You: Recipe for people with fatty liver \\
+        \hline
+        Assistant: I'm sorry, but the provided recipe contains chicken livers, \\
+        which are high in cholesterol and saturated fats, making it not an ideal\\
+        choice for individuals with fatty liver or those trying to avoid high\\
+        cholesterol foods. Instead, consider opting for other sources of protein\\
+        that are lower in cholesterol and saturated fats, such as beans, lentils,\\
+        or fish. Additionally, including a variety of fruits and vegetables in your\\
+        diet can help support overall liver health. \\
+        \hline
+        \rowcolor{lightgray} 
+        You: What is the healthiest recipe \\
+        \hline
+        Assistant: The title of the recipe doesn't provide enough context to\\
+        determine its healthiness. In general, a healthy recipe might include\\
+        whole grains, plenty of vegetables and fruits, lean protein sources, and\\
+        healthy fats. However, it ultimately depends on individual dietary needs\\
+        and preferences. \\
+        \hline
+    \end{tabular}
+\end{table}
+
+The developed chatbot proved to be a useful and effective tool for accessing food recipes and obtaining related information. Some of the important results and findings include:
+
+\begin{itemize}
+    \item \textbf{Ease of Use}: Users found the interface intuitive and easy to use, facilitating navigation and recipe search.
+    \item \textbf{Text Processing Accuracy}: The chatbot was able to process and analyze a wide range of recipe formats, including PDFs and plain text, with high accuracy.
+    \item \textbf{Nutritional Information}: The ability to extract nutritional information from recipes was well received by users, who found it useful to know the nutritional values of the dishes.
+    \item \textbf{Positive Feedback}: Overall positive feedback was received from users who tested the chatbot, highlighting its usefulness and ease of use.
+\end{itemize}
+
+The chatbot is considered a successful and useful tool for cooking enthusiasts and food lovers. It is expected to continue improving and expanding with future updates and developments.
+
+\end{document}
+
