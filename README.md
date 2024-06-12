@@ -1,65 +1,65 @@
-# Chatbox con Procesamiento de Textos de Recetas
+# Recipe Chatbot
 
-Este proyecto desarrolla un chatbot que puede procesar y dividir la información de un dataset de recetas en ingredientes e instrucciones. Utiliza varias herramientas y bibliotecas de procesamiento de lenguaje natural (NLP) para analizar y dividir el texto.
+This project develops a chatbot that can process and parse information from a recipe dataset into ingredients and instructions. It utilizes various natural language processing (NLP) tools and libraries to analyze and divide the text.
 
-## Tabla de Contenidos
+## Table of Contents
 
-1. [Descripción del Proyecto](#descripción-del-proyecto)
-2. [Instalación](#instalación)
-3. [Uso](#uso)
-4. [Estructura del Código](#estructura-del-código)
+1. [Project Description](#project-description)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Code Structure](#code-structure)
 5. [Datasets](#datasets)
-6. [Resultados](#resultados)
-7. [Licencia](#licencia)
+6. [Results](#results)
+7. [License](#license)
 
-## Descripción del Proyecto
+## Project Description
 
-Este proyecto se centra en la creación de un chatbot que puede tomar un dataset de recetas, procesar el texto para dividirlo en ingredientes e instrucciones, y proporcionar respuestas a preguntas sobre las recetas.
+This project focuses on creating a chatbot that can take a recipe dataset, process the text to parse it into ingredients and instructions, and provide responses to questions about the recipes.
 
-## Instalación
+## Installation
 
-1. Clona este repositorio:
+1. Clone this repository:
     ```bash
-    git clone https://github.com/tuusuario/tu-repositorio.git
+    git clone https://github.com/yourusername/your-repository.git
     ```
-2. Navega al directorio del proyecto:
+2. Navigate to the project directory:
     ```bash
-    cd tu-repositorio
+    cd your-repository
     ```
-3. Instala las dependencias necesarias:
+3. Install the necessary dependencies:
     ```bash
     pip install -r requirements.txt
     ```
 
-## Uso
+## Usage
 
-1. Ejecuta el script principal para iniciar el chatbot:
+1. Run the main script to start the chatbot:
     ```bash
     python gui.py
     ```
-2. Una vez que la GUI esté abierta, puedes cargar los documentos PDF y hacer preguntas sobre las recetas.
+2. Once the GUI is open, you can load PDF documents and ask questions about the recipes.
 
-## Estructura del Código
+## Code Structure
 
-- `gui.py`: Contiene el código para la interfaz gráfica de usuario.
-- `text_processing.py`: Contiene las funciones para cargar, procesar y dividir los textos de las recetas.
-- `requirements.txt`: Lista de dependencias necesarias para el proyecto.
-- `images/`: Carpeta que contiene las imágenes utilizadas en la GUI.
-- `source_documents/`: Carpeta donde se almacenan los PDF de recetas.
+- `gui.py`: Contains the code for the graphical user interface.
+- `text_processing.py`: Contains functions for loading, processing, and parsing recipe texts.
+- `requirements.txt`: List of dependencies required for the project.
+- `images/`: Folder containing images used in the GUI.
+- `source_documents/`: Folder where recipe PDFs are stored.
 
 ## Datasets
 
-Utilizamos los siguientes datasets para este proyecto:
+We utilize the following datasets for this project:
 - [Nutrition details for most common foods](https://www.kaggle.com/datasets/niharika41298/nutrition-details-for-most-common-foods)
 - [Food ingredients and recipe dataset with images](https://www.kaggle.com/datasets/pes12017000148/food-ingredients-and-recipe-dataset-with-images)
 
-## Resultados
+## Results
 
-- **Distribución de Recetas:** El dataset contiene varias categorías como desayunos, almuerzos y cenas.
-- **Frecuencia de Ingredientes:** Los ingredientes más comunes incluyen X, Y y Z.
-- **Evaluación de la Precisión:** Utilizamos métricas como la exactitud y la precisión para evaluar el rendimiento del modelo.
-- **Análisis de Errores:** El modelo tuvo éxito en la mayoría de los casos, pero falló en casos donde las instrucciones estaban mal estructuradas o incompletas.
+- **Recipe Distribution:** The dataset contains various categories such as breakfasts, lunches, and dinners.
+- **Ingredient Frequency:** Common ingredients include X, Y, and Z.
+- **Accuracy Evaluation:** We employ metrics such as accuracy and precision to evaluate the model's performance.
+- **Error Analysis:** The model succeeded in most cases but failed in instances where instructions were poorly structured or incomplete.
 
-## Licencia
+## License
 
-Este proyecto está licenciado bajo los términos de la licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+This project is licensed under the terms of the MIT license. See the `LICENSE` file for more details.
